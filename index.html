@@ -5,6 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./style.css" />
 		<meta name="description" content="A site to generate beautiful Mandelbrot Set images!" />
+		<!-- Socials -->
+		<meta property="og:title" content="Mandelbrot Set" />
+		<meta property="og:description" content="A site to generate beautiful Mandelbrot Set images!" />
+		<meta property="og:image" content="http://mandelbrot.meichelbeck.io/mandelbrot.png" />
+		<meta property="og:url" content="http://mandelbrot.meichelbeck.io" />
+		<meta name="twitter:card" content="summary_large_image" />
 		<title>The Mandelbrot Set</title>
 	</head>
 	<body>
@@ -30,6 +36,10 @@
 		</header>
 		<main>
 			<canvas id="main-canvas"></canvas>
+			<section id="laoding" class="loading">
+				<img src="./mandelbrot.png" alt="Loading Image" />
+				<h2>Loading...</h2>
+			</section>
 			<aside id="settings" class="settings hidden">
 				<button id="close-settings" class="btn btn-settings">
 					<svg

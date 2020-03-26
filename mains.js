@@ -138,8 +138,6 @@ const draw = () => {
 	}, 10)
 }
 
-draw()
-
 // Events
 document.getElementById('open-settings').addEventListener('click', () => {
 	document.getElementById('settings').classList.remove('hidden')
@@ -176,7 +174,7 @@ document.getElementById('save').addEventListener('click', (e) => {
 	imageURI = canvas.toDataURL()
 	const link = document.createElement('a')
 	link.setAttribute('href', imageURI)
-	link.setAttribute('download', 'Mandelbrot')
+	link.setAttribute('download', 'mandelbrot')
 	link.click()
 })
 
@@ -185,4 +183,12 @@ window.addEventListener('keyup', (e) => {
 		case 83:
 			document.getElementById('settings').classList.toggle('hidden')
 	}
+})
+
+// Loading screen
+
+// Launch app
+window.addEventListener('load', () => {
+	console.log('load')
+	draw()
 })
