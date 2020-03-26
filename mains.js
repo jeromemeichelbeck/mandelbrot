@@ -137,6 +137,7 @@ const draw = () => {
 		ctx.putImageData(imageData, 0, 0)
 		loading.classList.add('hidden')
 		splash.classList.add('hidden')
+		window.scrollTo(0, document.body.scrollHeight)
 	}, 10)
 }
 
