@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Mandali&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	font-family: 'Mandali', sans-serif;
+	color: #fff;
+}
+
+.main-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	z-index: 0;
+	background-color: #666;
+	padding: 0 2rem;
+}
+
+.btn {
+	border: none;
+	/* padding: 0.7rem; */
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+	outline: none;
+	background-color: #627cee;
+}
+
+.btn svg {
+	color: #fff;
+	flex: 1;
+}
+
+.btn-settings {
+	position: absolute;
+	top: 5px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	padding: 0.7rem;
+	background-color: #5167c5;
+	z-index: 2;
+}
+
+.settings {
+	background-color: #5167c5;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 20%;
+	min-width: 300px;
+	z-index: 1;
+	transition: all 0.4s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.settings.hidden {
+	transform: translateX(1000px);
+	opacity: 0;
+}
+
+.settings form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 350px;
+	width: 80%;
+	margin: auto;
+}
+
+.settings .form-group {
+	display: flex;
+	justify-content: space-between;
+}
+
+.settings input {
+	max-width: 100px;
+}
+
+.btn-submit {
+	font-size: 1rem;
+	background-color: #384685;
+	color: #fff;
+	padding: 0.5rem 1rem;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+	background-color: #293466;
+}
+
+.btn-reset {
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+}
+
+.btn-reset:hover,
+.btn-reset:focus {
+	background-color: #ccc;
+}
+
+.btn-save {
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	color: #fff;
+	background-color: #46a049;
+}
+
+.btn-save:hover,
+.btn-save:focus {
+	background-color: #38813b;
+}
+
+.settings .loading.hidden {
+	visibility: hidden;
+}
+
+.settings .footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 30px;
+	z-index: 2;
+	text-align: center;
+}
