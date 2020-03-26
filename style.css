@@ -16,6 +16,7 @@ body {
 	overflow: hidden;
 	font-family: 'Mandali', sans-serif;
 	color: #fff;
+	background-color: #333;
 }
 
 canvas {
@@ -23,31 +24,18 @@ canvas {
 	overflow: hidden;
 }
 
-.loading,
-.loading img,
-.loading h2 {
+.loading {
 	position: absolute;
 	top: 0;
-	bottom: 0;
 	left: 0;
-	right: 0;
 }
 
 .loading {
 	z-index: -1;
-}
-
-.loading img {
-	min-width: 100%;
-	min-height: 100%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	padding: 10rem 2rem;
 }
 
 .loading h2 {
-	padding: 10%;
 	font-size: 4rem;
 }
 
