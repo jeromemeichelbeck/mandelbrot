@@ -136,7 +136,7 @@ const draw = () => {
 		}
 		ctx.putImageData(imageData, 0, 0)
 		loading.classList.add('hidden')
-		splash.classList.add('remove')
+		splash.classList.add('hidden')
 	}, 10)
 }
 
