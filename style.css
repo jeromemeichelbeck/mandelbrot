@@ -20,27 +20,19 @@ body {
 }
 
 canvas {
-	width: 100%;
-	overflow: hidden;
-}
-
-.loading {
 	position: absolute;
 	top: 0;
 	left: 0;
-}
-
-.loading {
+	width: 100%;
+	overflow: hidden;
 	z-index: -1;
-	padding: 10rem 2rem;
 }
 
-.loading h2 {
-	font-size: 4rem;
-}
-
-#splash.hidden {
-	display: none;
+#splash {
+	position: absolute;
+	z-index: -2;
+	margin: 10rem 2rem;
+	font-size: 3rem;
 }
 
 .main-header {
@@ -172,5 +164,8 @@ canvas {
 	.logo {
 		font-size: 1.2rem;
 		padding: 0.6rem;
+	}
+	#splash {
+		font-size: 2rem;
 	}
 }

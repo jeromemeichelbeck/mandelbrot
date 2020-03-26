@@ -116,7 +116,6 @@ const complexFromCoords = (x, y) => {
 
 const draw = () => {
 	const loading = document.getElementById('loading')
-	const splash = document.getElementById('splash')
 	loading.classList.remove('hidden')
 
 	setTimeout(() => {
@@ -136,8 +135,6 @@ const draw = () => {
 		}
 		ctx.putImageData(imageData, 0, 0)
 		loading.classList.add('hidden')
-		splash.classList.add('hidden')
-		window.scrollTo(0, document.body.scrollHeight)
 	}, 10)
 }
 
