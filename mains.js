@@ -65,6 +65,8 @@ class Complex {
 // Canvas
 const canvas = document.getElementById('main-canvas')
 const ctx = canvas.getContext('2d')
+ctx.canvas.width = window.innerWidth
+ctx.canvas.height = window.innerHeight
 
 // Default Settings
 let settings = {
@@ -89,9 +91,6 @@ const point = (x, y, color = '#000') => {
 }
 
 const setDimensions = () => {
-	ctx.canvas.width = window.innerWidth
-	ctx.canvas.height = window.innerHeight
-
 	// // Updating deltaX/deltaY according to screen ratio, center and zoom
 	const { width, height } = ctx.canvas
 	const ratio = width / height
