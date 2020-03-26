@@ -51,6 +51,10 @@ canvas {
 	font-size: 4rem;
 }
 
+#splash.hidden {
+	display: none;
+}
+
 .main-header {
 	position: absolute;
 	top: 0;

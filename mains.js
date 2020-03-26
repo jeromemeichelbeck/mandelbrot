@@ -116,6 +116,7 @@ const complexFromCoords = (x, y) => {
 
 const draw = () => {
 	const loading = document.getElementById('loading')
+	const splash = document.getElementById('splash')
 	loading.classList.remove('hidden')
 
 	setTimeout(() => {
@@ -135,6 +136,7 @@ const draw = () => {
 		}
 		ctx.putImageData(imageData, 0, 0)
 		loading.classList.add('hidden')
+		splash.classList.add('remove')
 	}, 10)
 }
 
@@ -160,7 +162,6 @@ document.getElementById('settings-form').addEventListener('submit', (e) => {
 		},
 		zoom: +document.getElementById('zoom').value
 	}
-	console.log(settings)
 	draw()
 })
 
@@ -189,6 +190,5 @@ window.addEventListener('keyup', (e) => {
 
 // Launch app
 window.addEventListener('load', () => {
-	console.log('load')
 	draw()
 })
